@@ -279,6 +279,30 @@ a {
 .print:nth-child(7) {
   --tilt: -0.4deg;
 }
+.print:nth-child(8) {
+  --tilt: 0.6deg;
+}
+.print:nth-child(9) {
+  --tilt: -0.6deg;
+}
+.print:nth-child(10) {
+  --tilt: 0.35deg;
+}
+.print:nth-child(11) {
+  --tilt: -0.55deg;
+}
+.print:nth-child(12) {
+  --tilt: 0.5deg;
+}
+.print:nth-child(13) {
+  --tilt: -0.7deg;
+}
+.print:nth-child(14) {
+  --tilt: 0.4deg;
+}
+.print:nth-child(15) {
+  --tilt: -0.4deg;
+}
 
 .print:hover,
 .print:focus-within {
