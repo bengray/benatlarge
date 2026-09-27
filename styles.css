@@ -531,6 +531,9 @@ a {
   .print--tall {
     grid-row: span 2;
   }
+  .print--small {
+    grid-row: span 1;
+  }
 }
 
 /* A print: photograph inside a paper border. The border is real white
