@@ -40,7 +40,7 @@ STILL TO REPLACE
 ----------------
 - All six placeholder JPGs
 - Every price in section 02. Those are invented.
-- hello@benatlarge.com, if that isn't the address
+- ben@benatlarge.com, if that isn't the address
 - og-image.jpg is referenced in the <head> but not included yet —
   export one at 1200x630 or remove the two meta tags.
 - All copy. It's a draft written in an impression of your voice,
