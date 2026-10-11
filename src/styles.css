@@ -147,6 +147,11 @@ a {
   display: block;
   white-space: nowrap;
 }
+.wordmark a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.1em;
+}
 .wordmark i {
   font-style: normal;
   color: var(--china);
@@ -225,6 +230,20 @@ a {
 .nav__list a:hover {
   color: var(--amber);
   border-color: var(--amber);
+}
+.nav__item--alt a {
+  color: var(--amber);
+}
+.nav__item--alt a:hover {
+  color: var(--paper);
+  border-color: var(--paper);
+}
+.nav__item--feed a {
+  color: #f26522;
+}
+.nav__item--feed a:hover {
+  color: var(--paper);
+  border-color: var(--paper);
 }
 /* Pushed to the far edge only when the row has room for it. On a narrow
    screen it just joins the queue instead of stranding the last section
@@ -1055,7 +1074,6 @@ a {
   }
 }
 .statement__not {
-  display: grid;
   font-family: var(--display);
   font-weight: 800;
   font-size: clamp(2rem, 1.2rem + 3.6vw, 4.75rem);
@@ -1065,9 +1083,28 @@ a {
   color: var(--paper);
 }
 .statement__not span {
-  text-decoration: line-through;
-  text-decoration-color: var(--china);
-  text-decoration-thickness: 0.07em;
+  /* Struck in china red grease pencil. The stroke has to sit on top of
+     the letters, and a background always paints underneath them, so the
+     text is drawn as a background too: the bottom layer is a flat paper
+     fill clipped to the glyphs, the top layer is the pencil stroke.
+     The spans stay inline (with <br>s between them) so box-decoration-break
+     gives every wrapped line its own stroke. The SVG can't read custom
+     properties: #bf2f2c is --china and #e8e7e2 is --paper. */
+  color: transparent;
+  padding-inline: 0.12em; /* let the stroke overshoot the words a little */
+  margin-inline: -0.12em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  background:
+    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 100' preserveAspectRatio='none'><filter id='g' x='-5%' y='-50%' width='110%' height='200%'><feTurbulence type='fractalNoise' baseFrequency='.08 .5' numOctaves='2' seed='3' result='n'/><feDisplacementMap in='SourceGraphic' in2='n' scale='5' xChannelSelector='R' yChannelSelector='G' result='d'/><feTurbulence type='fractalNoise' baseFrequency='.25 1.4' numOctaves='2' seed='8'/><feColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 4.1' result='h'/><feComposite in='d' in2='h' operator='in'/></filter><g filter='url(%23g)' fill='none' stroke='%23bf2f2c' stroke-linecap='round'><path d='M5 52 C110 47 250 50 395 41' stroke-width='12'/><path d='M18 55 C140 52 270 50 386 46' stroke-width='6' opacity='.85'/></g></svg>")
+      0 0 / 100% 100% no-repeat border-box,
+    linear-gradient(var(--paper), var(--paper)) text;
+  -webkit-background-clip: border-box, text;
+}
+/* Nudge the middle line so the three strokes don't look stamped. */
+.statement__not span:nth-child(3) {
+  background-position: 0 0.06em, 0 0;
+  background-size: 100% 92%, auto;
 }
 .statement__is {
   font-size: clamp(1.15rem, 1rem + 0.6vw, 1.5rem);
