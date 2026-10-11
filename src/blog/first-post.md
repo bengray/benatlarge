@@ -1,5 +1,5 @@
 ---
-title: "First post"
+title: "First post test"
 description: "One line that shows under the title on the blog page and in link previews."
 date: 2026-10-11
 draft: true
@@ -14,7 +14,7 @@ URL: this one would be `/blog/first-post/`.
 
 ## A heading
 
-Regular Markdown works: *italics*, **bold**, [links](/work-with-me.html),
+Regular Markdown works: _italics_, **bold**, [links](/work-with-me.html),
 lists, and quotes.
 
 > A pull quote sits off to the side with a red rule.
