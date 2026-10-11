@@ -1,0 +1,59 @@
+---
+layout: layouts/base.njk
+permalink: /blog/
+title: "ben.atlarge · Blog"
+description: "Notes from behind the camera: the shelter year, sessions, and what I am learning about photography."
+skipHref: "#posts"
+skipText: Skip to the posts
+---
+      <header class="head">
+        {% include "partials/lockup.njk" %}
+
+        <div class="head__foot">
+          <p class="standfirst">
+            Notes from behind the camera. The shelter year, the sessions, and
+            whatever I am working out in between.
+          </p>
+        </div>
+      </header>
+
+      <nav class="nav" aria-label="Site">
+        <ul class="nav__list">
+          <li class="nav__item--alt"><a href="/">&larr; Home</a></li>
+          <li class="nav__item--alt"><a href="/the-year/">The year</a></li>
+                      <li class="nav__item--feed"><a href="/feed.xml">Blog feed &darr;</a></li>
+
+
+          <li class="nav__away">
+             <a href="/work-with-me.html">Work with me &rarr;</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="sect" id="posts">
+        <div class="sect__head">
+          <p class="sect__n">{{ collections.posts | length | pad }}</p>
+          <h2 class="sect__t">Blog</h2>
+        </div>
+
+        {%- if collections.posts | length %}
+        <ol class="posts" reversed>
+          {%- for post in collections.posts | reverse %}
+          <li class="posts__item">
+            <a class="posts__link" href="{{ post.url }}">
+              <time class="posts__date" datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+              <span class="posts__t">{{ post.data.title }}</span>
+              {%- if post.data.description %}
+              <span class="posts__dek">{{ post.data.description }}</span>
+              {%- endif %}
+            </a>
+          </li>
+          {%- endfor %}
+        </ol>
+        {%- else %}
+        <div class="standby">
+          <p class="standby__mark">Nothing here yet</p>
+          <p class="standby__text">The first post is on its way.</p>
+        </div>
+        {%- endif %}
+      </section>

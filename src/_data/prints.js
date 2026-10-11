@@ -1,0 +1,77 @@
+// The prints wall on the home page, in order. Width and height must be
+// the file's real pixel size or the page jumps as it loads.
+// shape: "wide" or "tall" (tall prints take two rows on wide screens).
+export default [
+  {
+    src: "/photos/bruiser.jpg",
+    width: 1028,
+    height: 699,
+    shape: "wide",
+    alt: "A chihuahua sitting upright and looking directly at the camera",
+    caption: "Bruiser. Warrenville",
+  },
+  {
+    src: "/photos/blue-eyes-4.jpg",
+    width: 906,
+    height: 1200,
+    shape: "tall",
+    alt: "A Sphynx cat looking directly at the camera, with blue eyes",
+    caption: "Sphynx. Warrenville Merchants.",
+  },
+  {
+    src: "/photos/aphie.jpg",
+    width: 640,
+    height: 480,
+    shape: "wide",
+    alt: "A cat looking directly at the camera",
+    caption: "Aphrodite",
+  },
+  {
+    src: "/photos/two-slits.jpg",
+    width: 1002,
+    height: 606,
+    shape: "wide",
+    alt: "A cat looking directly at the camera, black and white photo",
+    caption: "Loki",
+  },
+  {
+    src: "/photos/georgie.jpg",
+    width: 1440,
+    height: 1547,
+    shape: "tall",
+    alt: "A Jack Russell terrier rolling onto his back on a wooden porch",
+    caption: "Georgie, back porch",
+  },
+  {
+    src: "/photos/lucy-maggie.jpg",
+    width: 640,
+    height: 480,
+    shape: "wide",
+    alt: "Two dogs sitting side by side, one leaning into the other",
+    caption: "Lucy & Maggie",
+  },
+  {
+    src: "/photos/good-girl.jpg",
+    width: 1200,
+    height: 796,
+    shape: "wide",
+    alt: "A dog looking at something off-camera, with a slightly interested expression",
+    caption: "Certified Good Girl",
+  },
+  {
+    src: "/photos/looking-up.jpg",
+    width: 1200,
+    height: 800,
+    shape: "wide",
+    alt: "A dog looking up at the camera with a loving expression",
+    caption: "Looking Up",
+  },
+  {
+    src: "/photos/attention.jpg",
+    width: 1200,
+    height: 779,
+    shape: "wide",
+    alt: "A dog looking off camera at something that has caught his attention",
+    caption: "Attention",
+  },
+];
