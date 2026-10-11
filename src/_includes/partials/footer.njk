@@ -1,10 +1,17 @@
       <footer class="foot">
         <p class="foot__row">
           <span>&copy; {{ "now" | year }} Ben Doyle Gray</span>
-          {%- if page.url == "/" %}
+          {%- if page.url != "/" %}
+          <a href="/">Home</a>
+          {%- endif %}
+          {%- if page.url != "/work-with-me.html" %}
           <a href="/work-with-me.html">Work with me</a>
-          {%- else %}
-          <a href="/">The year</a>
+          {%- endif %}
+          {%- if page.url != "/the-year/" %}
+          <a href="/the-year/">The year</a>
+          {%- endif %}
+          {%- if page.url != "/blog/" %}
+          <a href="/blog/">Blog</a>
           {%- endif %}
           <a href="https://bendoylegray.com">bendoylegray.com &rarr;</a>
           <a href="https://instagram.com/ben.atlarge">Instagram</a>

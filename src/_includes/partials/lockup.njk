@@ -9,6 +9,6 @@
         <!-- Set to overrun the page and get cut by its right edge. The size is
          computed at runtime so the crop is a fixed fraction of the page
          rather than an accident of whichever font actually loaded. -->
-        <h1 class="wordmark" id="wordmark">
+        {% set lockupTag = lockupTag or "h1" %}<{{ lockupTag }} class="wordmark" id="wordmark">
           <span class="wordmark__line">BEN<i>.</i>ATLARGE</span>
-        </h1>
+        </{{ lockupTag }}>

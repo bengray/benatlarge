@@ -1,0 +1,56 @@
+---
+layout: layouts/base.njk
+lockupTag: p
+skipHref: "#post"
+skipText: Skip to the post
+---
+      <header class="head head--slim">
+        {% include "partials/lockup.njk" %}
+      </header>
+
+      <nav class="nav" aria-label="Site">
+        <ul class="nav__list">
+          <li><a href="/blog/">&larr; Blog</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/the-year/">The year</a></li>
+          <li class="nav__away">
+            <a href="/work-with-me.html">Work with me &rarr;</a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="sect post" id="post">
+        <header class="post__head">
+          <p class="post__date">
+            <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+            {%- if draft %} <span class="post__draft">Draft</span>{% endif %}
+          </p>
+          <h1 class="post__title">{{ title }}</h1>
+          {%- if description %}
+          <p class="post__dek">{{ description }}</p>
+          {%- endif %}
+        </header>
+
+        <div class="prose">
+{{ content | safe }}
+        </div>
+      </article>
+
+      {%- set prev = collections.posts | getPreviousCollectionItem %}
+      {%- set next = collections.posts | getNextCollectionItem %}
+      {%- if prev or next %}
+      <nav class="sect pager" aria-label="More posts">
+        {%- if prev %}
+        <a class="pager__link" href="{{ prev.url }}">
+          <span class="pager__dir">&larr; Older</span>
+          <span class="pager__t">{{ prev.data.title }}</span>
+        </a>
+        {%- endif %}
+        {%- if next %}
+        <a class="pager__link pager__link--next" href="{{ next.url }}">
+          <span class="pager__dir">Newer &rarr;</span>
+          <span class="pager__t">{{ next.data.title }}</span>
+        </a>
+        {%- endif %}
+      </nav>
+      {%- endif %}

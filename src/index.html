@@ -1,41 +1,34 @@
 ---
 layout: layouts/base.njk
 date: git Last Modified
-title: "ben.atlarge · One Shelter, Twelve Months"
-description: "A twelve-month photographic record of one shelter in DuPage County, Illinois. Every dog that comes through it, and every outcome, including the ones that don't end well."
-ogDescription: "A twelve-month photographic record of one shelter. Every dog, and every outcome."
+title: "ben.atlarge · Dog photography, DuPage County"
+description: "Dog photography in Warrenville and across DuPage County, Illinois. Outdoors, in available light. The dog's life and spirit, not the breed standard."
+ogDescription: "Not breed standard. Not a gray backdrop. Dog photography in Warrenville, Illinois."
 permalink: "/"
-skipHref: "#dispatches"
+skipHref: "#prints"
 skipText: "Skip to the pictures"
 ---
       <!-- ---------- masthead ---------- -->
-      <!-- The lockup is unchanged: stripe, then the wordmark cut by the
-           right edge of the page. Everything below it is new. -->
       <header class="head">
         {% include "partials/lockup.njk" %}
 
         <div class="head__foot">
           <p class="standfirst">
-            For twelve months I am photographing one shelter. Every dog that
-            comes through it, and every way they leave.
+            I photograph dogs in DuPage County. Outdoors, in available light,
+            and never on a gray backdrop.
           </p>
           <dl class="facts">
             <div>
-              <dt>Running</dt>
-              <dd>Twelve months</dd>
-            </div>
-            <div>
-              <dt>Subject</dt>
-              <!-- TODO: shelter name once the agreement is signed. -->
-              <dd>One shelter</dd>
-            </div>
-            <div>
-              <dt>Outcomes</dt>
-              <dd>All of them</dd>
-            </div>
-            <div>
               <dt>Based</dt>
               <dd>Warrenville, IL</dd>
+            </div>
+            <div>
+              <dt>Light</dt>
+              <dd>Whatever is there</dd>
+            </div>
+            <div>
+              <dt>Studio</dt>
+              <dd>None. Deliberately.</dd>
             </div>
           </dl>
         </div>
@@ -44,337 +37,111 @@ skipText: "Skip to the pictures"
       <!-- ---------- nav ---------- -->
       <nav class="nav" aria-label="Sections">
         <ul class="nav__list">
-          <li><a href="#year">01 The Year</a></li>
-          <li><a href="#dispatches">02 Dispatches</a></li>
-          <li><a href="#prints">03 Prints</a></li>
-          <li><a href="#contact">04 Contact</a></li>
+          <li><a href="#prints">01 Prints</a></li>
+          <li><a href="#doors">02 Work</a></li>
+          <li><a href="#contact">03 Contact</a></li>
           <li class="nav__away">
-            <a href="work-with-me.html">Work with me &rarr;</a>
+            <a href="/work-with-me.html">Work with me &rarr;</a>
           </li>
         </ul>
       </nav>
 
-      <!-- ---------- 01 · the year ---------- -->
-      <section class="sect" id="year">
-        <div class="sect__head">
-          <p class="sect__n">01</p>
-          <h2 class="sect__t">The year</h2>
-        </div>
-
-        <div class="year">
-          <p class="year__lead">
-            One shelter. Twelve months. Every dog that comes through the door.
-          </p>
-
-          <div class="year__body">
-            <p>
-              A dog photographed badly sits in a kennel longer. That is the
-              whole argument, and it is the reason I started carrying a camera
-              into shelters in the first place. But a good listing photograph is
-              a transaction, and it disappears the moment the dog is adopted.
-              What happens to the animal before and after that frame is the part
-              nobody keeps.
-            </p>
-            <p>
-              So I am keeping it. For twelve months I am working inside one
-              shelter, photographing intakes, the long middle where nothing
-              happens, the days that go well and the days that don't. Not
-              breed-standard portraits against a gray backdrop. Photographs made
-              so the animal's life and spirit are the subject, which is slower
-              work and needs the kind of access you only get by showing up for a
-              year.
-            </p>
-            <p>
-              I will publish the outcomes that don't end well. That is not a
-              disclaimer, it is the point. A record that only shows the
-              adoptions is an advertisement, and there are enough of those. If a
-              dog is returned twice, or goes out on a behavioral hold, or is
-              euthanized, that is in here too, handled carefully and with the
-              shelter's knowledge.
-            </p>
-          </div>
-
-          <div class="terms">
-            <div class="terms__col">
-              <h3 class="terms__h">What the shelter gets</h3>
-              <ul class="terms__list">
-                <li>
-                  Every usable frame, full resolution, for listings, socials,
-                  grant applications, print, anything.
-                </li>
-                <li>No credit required, no license conditions, no fee.</li>
-                <li>Work scheduled around intake, not the other way around.</li>
-                <li>
-                  Right of refusal on any photograph before it appears here.
-                </li>
-              </ul>
-            </div>
-            <div class="terms__col">
-              <h3 class="terms__h">What I ask for</h3>
-              <ul class="terms__list">
-                <li>
-                  Regular access for twelve months, roughly one day a week.
-                </li>
-                <li>
-                  Permission to follow individual animals from intake to
-                  outcome.
-                </li>
-                <li>
-                  Honesty about the hard cases, and the freedom to publish them.
-                </li>
-                <li>Names. The dogs get named here, not numbered.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <!-- ---------- the statement ---------- -->
+      <!-- The thesis, said as what this is not. Short on purpose: the
+           prints underneath are the argument. -->
+      <section class="sect statement" aria-label="What this is">
+        <p class="statement__not">
+          <span>Not breed standard.</span>
+          <span>Not a gray backdrop.</span>
+          <span>Not sit, stay, good boy.</span>
+        </p>
+        <p class="statement__is">
+          The dog as they actually are: distracted, filthy, mid-sniff, bored of
+          me. Their life and their spirit, which is the only thing about them
+          worth keeping.
+        </p>
       </section>
 
-      <!-- ---------- 02 · dispatches ---------- -->
-      <!-- This is where the year accumulates. One <article class="dispatch">
-           per animal, newest first. The template is at the bottom of this
-           section, commented out. Copy it, do not rebuild it. -->
-      <section class="sect sect--dispatches" id="dispatches">
-        <div class="sect__head">
-          <p class="sect__n">02</p>
-          <h2 class="sect__t">Dispatches</h2>
-          <p class="sect__note">
-            One entry per dog, from intake to whatever happens. Posted as the
-            year goes.
-          </p>
-        </div>
-
-        <div class="dispatches">
-          <!-- Delete the .standby block when the first dispatch goes in.
-               Dispatches live here, newest first. -->
-          <div class="standby">
-            <p class="standby__mark">Not started</p>
-            <p class="standby__text">
-              The shelter is not chosen yet. Once the agreement is signed this
-              fills up, one dog at a time, and it does not get tidied afterward.
-            </p>
-          </div>
-        </div>
-
-        <!--
-        DISPATCH TEMPLATE. Copy the whole <article>. Notes:
-
-          - data-status takes "waiting", "adopted", or "closed". It colours
-            the left rule and the status cell. Anything else falls back grey.
-          - Number them in order of intake, not in order of posting.
-          - Two to five frames reads best. One frame is a print, not a
-            dispatch; more than five and the strip starts to scroll badly.
-          - Set width and height on every <img> so nothing jumps while the
-            page loads.
-          - Caption register: name, place, date, fact. No jokes here. The
-            jokes belong in section 03.
-
-        <article class="dispatch" data-status="adopted">
-          <header class="dispatch__head">
-            <p class="dispatch__n">01</p>
-            <h3 class="dispatch__name">Ruby</h3>
-            <dl class="dispatch__meta">
-              <div><dt>Intake</dt><dd>3 March 2026</dd></div>
-              <div><dt>Est. age</dt><dd>Two years</dd></div>
-              <div><dt>Days in</dt><dd>41</dd></div>
-              <div><dt>Status</dt><dd class="dispatch__status">Adopted</dd></div>
-            </dl>
-          </header>
-
-          <div class="dispatch__strip">
-            <figure class="frame">
-              <div class="frame__img">
-                <img src="photos/ruby-01.jpg" width="1200" height="800"
-                     alt="A brindle mixed-breed dog standing at the front of a kennel run"
-                     loading="lazy" decoding="async" />
-              </div>
-              <figcaption class="frame__cap">
-                <span class="frame__n">i</span><span>Intake day, 3 March</span>
-              </figcaption>
-            </figure>
-            <figure class="frame">
-              <div class="frame__img">
-                <img src="photos/ruby-02.jpg" width="800" height="1200"
-                     alt="The same dog asleep on a raised bed in late afternoon light"
-                     loading="lazy" decoding="async" />
-              </div>
-              <figcaption class="frame__cap">
-                <span class="frame__n">ii</span><span>Week three</span>
-              </figcaption>
-            </figure>
-          </div>
-
-          <div class="dispatch__text">
-            <p>
-              Short. Two or three sentences of what actually happened, in the
-              flattest language you can manage. The photographs carry the
-              feeling, the text carries the facts.
-            </p>
-          </div>
-        </article>
-        -->
-      </section>
-
-      <!-- ---------- 03 · prints ---------- -->
+      <!-- ---------- 01 · prints ---------- -->
+      <!-- The wall comes from src/_data/prints.js. Reorder or add there. -->
       <section class="sect" id="prints">
         <div class="sect__head">
-          <p class="sect__n">03</p>
+          <p class="sect__n">01</p>
           <h2 class="sect__t">Prints</h2>
           <p class="sect__note">
-            Samples of my work. All photographs are available as prints, and I
-            will happily make a custom print of any dog in the dispatches.
-            Contact me for details.
+            Every photograph here is available as a print.
           </p>
         </div>
 
         <div class="wall">
-          <figure class="print print--wide">
+          {%- for p in prints %}
+          <figure class="print{% if p.shape == 'tall' %} print--tall{% endif %}">
             <div class="print__img">
               <img
-                src="photos/bruiser.jpg"
-                width="1028"
-                height="699"
-                alt="A chihuahua sitting upright and looking directly at the camera"
-                loading="lazy"
+                src="{{ p.src }}"
+                width="{{ p.width }}"
+                height="{{ p.height }}"
+                alt="{{ p.alt }}"
+                loading="{{ 'eager' if loop.index <= 2 else 'lazy' }}"
                 decoding="async"
               />
             </div>
             <figcaption class="print__cap">
-              <span class="print__n">01</span><span>Bruiser. Warrenville</span>
+              <span class="print__n">{{ loop.index | pad }}</span><span>{{ p.caption | safe }}</span>
             </figcaption>
           </figure>
-
-          <figure class="print print--wide">
-            <div class="print__img">
-              <img
-                src="photos/georgie-2.jpg"
-                width="1200"
-                height="800"
-                alt="A Jack Russell terrier lying stretched out with his chin on the floor"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <figcaption class="print__cap">
-              <span class="print__n">02</span><span>Georgie, in repose</span>
-            </figcaption>
-          </figure>
-
-          <figure class="print print--wide">
-            <div class="print__img">
-              <img
-                src="photos/aphie.jpg"
-                width="400"
-                height="493"
-                alt="A cat looking directly at the camera"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <figcaption class="print__cap">
-              <span class="print__n">03</span><span>Aphrodite</span>
-            </figcaption>
-          </figure>
-
-          <figure class="print print--wide">
-            <div class="print__img">
-              <img
-                src="photos/two-slits.jpg"
-                width="400"
-                height="493"
-                alt="A cat looking directly at the camera, black and white photo"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <figcaption class="print__cap">
-              <span class="print__n">04</span><span>Loki</span>
-            </figcaption>
-          </figure>
-
-          <figure class="print print--wide">
-            <div class="print__img">
-              <img
-                src="photos/georgie.jpg"
-                width="1200"
-                height="800"
-                alt="A Jack Russell terrier rolling onto his back on a wooden porch"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <figcaption class="print__cap">
-              <span class="print__n">05</span><span>Georgie, back porch</span>
-            </figcaption>
-          </figure>
-
-          <figure class="print print--wide">
-            <div class="print__img">
-              <img
-                src="photos/lucy-maggie.jpg"
-                width="1200"
-                height="800"
-                alt="Two dogs sitting side by side, one leaning into the other"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <figcaption class="print__cap">
-              <span class="print__n">06</span><span>Lucy & Maggie</span>
-            </figcaption>
-          </figure>
-
-          <figure class="print print--wide">
-            <div class="print__img">
-              <img
-                src="photos/good-girl.jpg"
-                width="1200"
-                height="800"
-                alt="A dog looking at something off-camera, with a slightly interested expression"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <figcaption class="print__cap">
-              <span class="print__n">07</span><span>Certified Good Girl</span>
-            </figcaption>
-          </figure>
-          <figure class="print print--wide">
-            <div class="print__img">
-              <img
-                src="photos/looking-up.jpg"
-                width="1200"
-                height="800"
-                alt="A dog looking up at the camera with a loving expression"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <figcaption class="print__cap">
-              <span class="print__n">08</span><span>Looking Up</span>
-            </figcaption>
-          </figure>
-          <figure class="print print--wide">
-            <div class="print__img">
-              <img
-                src="photos/attention.jpg"
-                width="1200"
-                height="800"
-                alt="A dog looking off camera at something that has caught his attention"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <figcaption class="print__cap">
-              <span class="print__n">09</span><span>Attention</span>
-            </figcaption>
-          </figure>
+          {%- endfor %}
         </div>
       </section>
 
-      <!-- ---------- 04 · contact ---------- -->
+      <!-- ---------- 02 · three doors ---------- -->
+      <section class="sect" id="doors">
+        <div class="sect__head">
+          <p class="sect__n">02</p>
+          <h2 class="sect__t">The work</h2>
+        </div>
+
+        <ul class="doors">
+          <li>
+            <a class="door" href="/work-with-me.html">
+              <span class="door__k">Sessions</span>
+              <span class="door__t">Your dog</span>
+              <span class="door__d">
+                Forty-five minutes or two hours, somewhere outside, with a dog
+                who would rather be doing something else.
+              </span>
+              <span class="door__go">Rates and booking &rarr;</span>
+            </a>
+          </li>
+          <li>
+            <a class="door" href="/the-year/">
+              <span class="door__k">The project</span>
+              <span class="door__t">The year</span>
+              <span class="door__d">
+                One shelter, twelve months. Every dog that comes through it, and
+                every way they leave.
+              </span>
+              <span class="door__go">What it is &rarr;</span>
+            </a>
+          </li>
+          <li>
+            {%- set latest = (collections.posts | last) if collections.posts else null %}
+            <a class="door" href="{{ latest.url if latest else '/blog/' }}">
+              <span class="door__k">{{ "Latest post" if latest else "Blog" }}</span>
+              <span class="door__t">{{ latest.data.title if latest else "Notes" }}</span>
+              <span class="door__d">
+                {{ latest.data.description if (latest and latest.data.description) else "What I am learning from behind the camera, written down." }}
+              </span>
+              <span class="door__go">{{ "Read it" if latest else "The blog" }} &rarr;</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ---------- 03 · contact ---------- -->
       <section class="sect" id="contact">
         <div class="sect__head">
-          <p class="sect__n">04</p>
+          <p class="sect__n">03</p>
           <h2 class="sect__t">Contact</h2>
         </div>
 
@@ -384,15 +151,8 @@ skipText: "Skip to the pictures"
           >
           <div class="book__aside">
             <p>
-              If you run a shelter or a rescue and
-              <a class="tx" href="#year">The Year</a> above sounds like
-              something you want happening in your building, this is the only
-              step. Tell me roughly how many animals you move in a month and who
-              I would be working around.
-            </p>
-            <p>
-              If you are here about photographing your own dog, that is
-              <a class="tx" href="work-with-me.html">through here</a>.
+              Tell me the dog's name and roughly how they feel about strangers.
+              If it is about a print, tell me which number.
             </p>
             <p class="book__small">
               I answer everything, eventually and in order.

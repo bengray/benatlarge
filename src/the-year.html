@@ -1,0 +1,244 @@
+---
+layout: layouts/base.njk
+date: git Last Modified
+title: "ben.atlarge · The Year: One Shelter, Twelve Months"
+description: "A twelve-month photographic record of one shelter in DuPage County, Illinois. Every dog that comes through it, and every outcome, including the ones that don't end well."
+ogDescription: "A twelve-month photographic record of one shelter. Every dog, and every outcome."
+permalink: "/the-year/"
+skipHref: "#dispatches"
+skipText: "Skip to the pictures"
+---
+      <!-- ---------- masthead ---------- -->
+      <!-- The lockup is unchanged: stripe, then the wordmark cut by the
+           right edge of the page. Everything below it is new. -->
+      <header class="head">
+        {% include "partials/lockup.njk" %}
+
+        <div class="head__foot">
+          <p class="standfirst">
+            For twelve months I am photographing one shelter. Every dog that
+            comes through it, and every way they leave.
+          </p>
+          <dl class="facts">
+            <div>
+              <dt>Running</dt>
+              <dd>Twelve months</dd>
+            </div>
+            <div>
+              <dt>Subject</dt>
+              <!-- TODO: shelter name once the agreement is signed. -->
+              <dd>One shelter</dd>
+            </div>
+            <div>
+              <dt>Outcomes</dt>
+              <dd>All of them</dd>
+            </div>
+            <div>
+              <dt>Based</dt>
+              <dd>Warrenville, IL</dd>
+            </div>
+          </dl>
+        </div>
+      </header>
+
+      <!-- ---------- nav ---------- -->
+      <nav class="nav" aria-label="Sections">
+        <ul class="nav__list">
+          <li><a href="#year">01 The Year</a></li>
+          <li><a href="#dispatches">02 Dispatches</a></li>
+          <li><a href="#contact">03 Contact</a></li>
+          <li class="nav__away">
+            <a href="/">&larr; Home</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ---------- 01 · the year ---------- -->
+      <section class="sect" id="year">
+        <div class="sect__head">
+          <p class="sect__n">01</p>
+          <h2 class="sect__t">The year</h2>
+        </div>
+
+        <div class="year">
+          <p class="year__lead">
+            One shelter. Twelve months. Every dog that comes through the door.
+          </p>
+
+          <div class="year__body">
+            <p>
+              A dog photographed badly sits in a kennel longer. That is the
+              whole argument, and it is the reason I started carrying a camera
+              into shelters in the first place. But a good listing photograph is
+              a transaction, and it disappears the moment the dog is adopted.
+              What happens to the animal before and after that frame is the part
+              nobody keeps.
+            </p>
+            <p>
+              So I am keeping it. For twelve months I am working inside one
+              shelter, photographing intakes, the long middle where nothing
+              happens, the days that go well and the days that don't. Not
+              breed-standard portraits against a gray backdrop. Photographs made
+              so the animal's life and spirit are the subject, which is slower
+              work and needs the kind of access you only get by showing up for a
+              year.
+            </p>
+            <p>
+              I will publish the outcomes that don't end well. That is not a
+              disclaimer, it is the point. A record that only shows the
+              adoptions is an advertisement, and there are enough of those. If a
+              dog is returned twice, or goes out on a behavioral hold, or is
+              euthanized, that is in here too, handled carefully and with the
+              shelter's knowledge.
+            </p>
+          </div>
+
+          <div class="terms">
+            <div class="terms__col">
+              <h3 class="terms__h">What the shelter gets</h3>
+              <ul class="terms__list">
+                <li>
+                  Every usable frame, full resolution, for listings, socials,
+                  grant applications, print, anything.
+                </li>
+                <li>No credit required, no license conditions, no fee.</li>
+                <li>Work scheduled around intake, not the other way around.</li>
+                <li>
+                  Right of refusal on any photograph before it appears here.
+                </li>
+              </ul>
+            </div>
+            <div class="terms__col">
+              <h3 class="terms__h">What I ask for</h3>
+              <ul class="terms__list">
+                <li>
+                  Regular access for twelve months, roughly one day a week.
+                </li>
+                <li>
+                  Permission to follow individual animals from intake to
+                  outcome.
+                </li>
+                <li>
+                  Honesty about the hard cases, and the freedom to publish them.
+                </li>
+                <li>Names. The dogs get named here, not numbered.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- 02 · dispatches ---------- -->
+      <!-- This is where the year accumulates. One <article class="dispatch">
+           per animal, newest first. The template is at the bottom of this
+           section, commented out. Copy it, do not rebuild it. -->
+      <section class="sect sect--dispatches" id="dispatches">
+        <div class="sect__head">
+          <p class="sect__n">02</p>
+          <h2 class="sect__t">Dispatches</h2>
+          <p class="sect__note">
+            One entry per dog, from intake to whatever happens. Posted as the
+            year goes.
+          </p>
+        </div>
+
+        <div class="dispatches">
+          <!-- Delete the .standby block when the first dispatch goes in.
+               Dispatches live here, newest first. -->
+          <div class="standby">
+            <p class="standby__mark">Not started</p>
+            <p class="standby__text">
+              The shelter is not chosen yet. Once the agreement is signed this
+              fills up, one dog at a time, and it does not get tidied afterward.
+            </p>
+          </div>
+        </div>
+
+        <!--
+        DISPATCH TEMPLATE. Copy the whole <article>. Notes:
+
+          - data-status takes "waiting", "adopted", or "closed". It colours
+            the left rule and the status cell. Anything else falls back grey.
+          - Number them in order of intake, not in order of posting.
+          - Two to five frames reads best. One frame is a print, not a
+            dispatch; more than five and the strip starts to scroll badly.
+          - Set width and height on every <img> so nothing jumps while the
+            page loads.
+          - Caption register: name, place, date, fact. No jokes here. The
+            jokes belong in section 03.
+
+        <article class="dispatch" data-status="adopted">
+          <header class="dispatch__head">
+            <p class="dispatch__n">01</p>
+            <h3 class="dispatch__name">Ruby</h3>
+            <dl class="dispatch__meta">
+              <div><dt>Intake</dt><dd>3 March 2026</dd></div>
+              <div><dt>Est. age</dt><dd>Two years</dd></div>
+              <div><dt>Days in</dt><dd>41</dd></div>
+              <div><dt>Status</dt><dd class="dispatch__status">Adopted</dd></div>
+            </dl>
+          </header>
+
+          <div class="dispatch__strip">
+            <figure class="frame">
+              <div class="frame__img">
+                <img src="/photos/ruby-01.jpg" width="1200" height="800"
+                     alt="A brindle mixed-breed dog standing at the front of a kennel run"
+                     loading="lazy" decoding="async" />
+              </div>
+              <figcaption class="frame__cap">
+                <span class="frame__n">i</span><span>Intake day, 3 March</span>
+              </figcaption>
+            </figure>
+            <figure class="frame">
+              <div class="frame__img">
+                <img src="/photos/ruby-02.jpg" width="800" height="1200"
+                     alt="The same dog asleep on a raised bed in late afternoon light"
+                     loading="lazy" decoding="async" />
+              </div>
+              <figcaption class="frame__cap">
+                <span class="frame__n">ii</span><span>Week three</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="dispatch__text">
+            <p>
+              Short. Two or three sentences of what actually happened, in the
+              flattest language you can manage. The photographs carry the
+              feeling, the text carries the facts.
+            </p>
+          </div>
+        </article>
+        -->
+      </section>
+
+      <!-- ---------- 03 · contact ---------- -->
+      <section class="sect" id="contact">
+        <div class="sect__head">
+          <p class="sect__n">03</p>
+          <h2 class="sect__t">Contact</h2>
+        </div>
+
+        <div class="book">
+          <a class="book__mail" href="mailto:ben@benatlarge.com"
+            >ben@benatlarge.com</a
+          >
+          <div class="book__aside">
+            <p>
+              If you run a shelter or a rescue and
+              <a class="tx" href="#year">The Year</a> above sounds like
+              something you want happening in your building, this is the only
+              step. Tell me roughly how many animals you move in a month and who
+              I would be working around.
+            </p>
+            <p>
+              If you are here about photographing your own dog, that is
+              <a class="tx" href="/work-with-me.html">through here</a>.
+            </p>
+            <p class="book__small">
+              I answer everything, eventually and in order.
+            </p>
+          </div>
+        </div>
+      </section>
