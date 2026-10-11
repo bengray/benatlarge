@@ -34,13 +34,13 @@ Every adoption photo goes to you regardless of how the documentary side develops
 
 These are my opening terms. I expect you will want to change some of them, and I would rather negotiate now than discover a disagreement in month nine.
 
-| Situation | What you can do |
-| --- | --- |
-| Any given day | Any staff member can say not today, for any reason or none, and I stop |
-| Any animal | You can withdraw an animal from the project at any point before publication |
-| Euthanasia cases | Written about, yes. Photographed only where you agree case by case. The procedure itself, never |
-| Staff and volunteers | Nobody appears or is named without their own agreement, separate from yours |
-| Before anything publishes | You see it first, with enough time to raise objections |
+| Situation                 | What you can do                                                                                 |
+| ------------------------- | ----------------------------------------------------------------------------------------------- |
+| Any given day             | Any staff member can say not today, for any reason or none, and I stop                          |
+| Any animal                | You can withdraw an animal from the project at any point before publication                     |
+| Euthanasia cases          | Written about, yes. Photographed only where you agree case by case. The procedure itself, never |
+| Staff and volunteers      | Nobody appears or is named without their own agreement, separate from yours                     |
+| Before anything publishes | You see it first, with enough time to raise objections                                          |
 
 One thing worth naming now rather than later: name a single person on your side who can settle a disagreement about what publishes. If that person exists from the start, a difficult conversation in month nine stays a conversation.
 

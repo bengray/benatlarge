@@ -302,7 +302,7 @@ a {
   max-width: 46ch;
 }
 
-/* ---------- 01 · the year ---------- */
+/* ---------- 01 · the shelter year ---------- */
 
 .year {
   display: grid;
@@ -1103,8 +1103,12 @@ a {
 }
 /* Nudge the middle line so the three strokes don't look stamped. */
 .statement__not span:nth-child(3) {
-  background-position: 0 0.06em, 0 0;
-  background-size: 100% 92%, auto;
+  background-position:
+    0 0.06em,
+    0 0;
+  background-size:
+    100% 92%,
+    auto;
 }
 .statement__is {
   font-size: clamp(1.15rem, 1rem + 0.6vw, 1.5rem);
