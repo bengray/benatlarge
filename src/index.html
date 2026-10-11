@@ -1,60 +1,18 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ben.atlarge · One Shelter, Twelve Months</title>
-    <meta
-      name="description"
-      content="A twelve-month photographic record of one shelter in DuPage County, Illinois. Every dog that comes through it, and every outcome, including the ones that don't end well."
-    />
-    <link rel="canonical" href="https://benatlarge.com" />
-    <meta name="theme-color" content="#0f100d" />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="ben.atlarge" />
-    <meta
-      property="og:title"
-      content="ben.atlarge · One Shelter, Twelve Months"
-    />
-    <meta
-      property="og:description"
-      content="A twelve-month photographic record of one shelter. Every dog, and every outcome."
-    />
-    <meta property="og:url" content="https://benatlarge.com" />
-    <meta property="og:image" content="https://benatlarge.com/og-image.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <a class="skip" href="#dispatches">Skip to the pictures</a>
-
-    <div class="bench">
+---
+layout: layouts/base.njk
+date: git Last Modified
+title: "ben.atlarge · One Shelter, Twelve Months"
+description: "A twelve-month photographic record of one shelter in DuPage County, Illinois. Every dog that comes through it, and every outcome, including the ones that don't end well."
+ogDescription: "A twelve-month photographic record of one shelter. Every dog, and every outcome."
+permalink: "/"
+skipHref: "#dispatches"
+skipText: "Skip to the pictures"
+---
       <!-- ---------- masthead ---------- -->
       <!-- The lockup is unchanged: stripe, then the wordmark cut by the
            right edge of the page. Everything below it is new. -->
       <header class="head">
-        <p class="stripe">
-          <span class="stripe__mark">ben.atlarge</span>
-          <span class="stripe__sep" aria-hidden="true">/</span>
-          <span>Dog photography</span>
-          <span class="stripe__sep" aria-hidden="true">/</span>
-          <span>Warrenville, Illinois</span>
-        </p>
-
-        <!-- Set to overrun the page and get cut by its right edge. The size is
-         computed at runtime so the crop is a fixed fraction of the page
-         rather than an accident of whichever font actually loaded. -->
-        <h1 class="wordmark" id="wordmark">
-          <span class="wordmark__line">BEN<i>.</i>ATLARGE</span>
-        </h1>
+        {% include "partials/lockup.njk" %}
 
         <div class="head__foot">
           <p class="standfirst">
@@ -442,21 +400,3 @@
           </div>
         </div>
       </section>
-
-      <!-- ---------- footer ---------- -->
-      <footer class="foot">
-        <p class="foot__row">
-          <span>&copy; 2026 Ben Doyle Gray</span>
-          <a href="work-with-me.html">Work with me</a>
-          <a href="https://bendoylegray.com">bendoylegray.com &rarr;</a>
-          <a href="https://instagram.com/ben.atlarge">Instagram</a>
-        </p>
-        <p class="foot__row foot__row--small">
-          <span>ben.atlarge is a DBA of Ben Doyle Gray LLC</span>
-          <span>Warrenville, Illinois</span>
-        </p>
-      </footer>
-    </div>
-    <script src="main.js" defer></script>
-  </body>
-</html>
