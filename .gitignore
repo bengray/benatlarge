@@ -69,3 +69,7 @@ node_modules/
 .dataconnect
 .DS_Store
 photos/.DS_Store
+
+# Eleventy
+_site/
+.cache/

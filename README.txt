@@ -1,16 +1,27 @@
 benatlarge.com
 ==============
 
-Three files and a folder of photos. No build step, no dependencies.
-Upload the folder; that's the deploy. Same approach as bendoylegray.com.
+Built with Eleventy 3 and deployed on Netlify.
 
-  index.html    the page
-  styles.css    palette, tilt and layout live in :root at the top
-  main.js       wordmark fitting + develop-in on scroll
-  photos/       swap these out
+  src/index.html          the home page (content only)
+  src/work-with-me.html   the rates page (content only)
+  src/_includes/          shared <head>, lockup and footer
+  src/_data/site.js       site name, URL, og image
+  src/styles.css          palette, tilt and layout live in :root at the top
+  src/main.js             wordmark fitting + develop-in on scroll
+  src/photos/             swap these out
+  print_media/            working files, NOT published
 
-Open index.html in a browser to work on it. (If anything misbehaves
-from file://, run `python3 -m http.server` and use localhost:8000.)
+Working on it:
+
+  npm install       once
+  npm start         dev server at http://localhost:8080, live reload
+  npm run build     writes the site to _site/
+
+Deploy: push. Netlify runs `npm run build` and publishes _site/
+(see netlify.toml). New pages: drop an .html or .md file in src/
+with `layout: layouts/base.njk` and a title/description in the
+front matter.
 
 THE IDEA
 --------
@@ -25,14 +36,14 @@ purpose: dark ground instead of light, photographs instead of links.
 
 CHANGING THINGS
 ---------------
-Colours              -> :root at the top of styles.css
+Colours              -> :root at the top of src/styles.css
 How crooked          -> the .print:nth-child(n) --tilt values.
                         Past about 1.2deg it stops reading as a hand.
 How far the name
-overruns the page    -> OVERRUN in main.js. 1.06 means the line is
+overruns the page    -> OVERRUN in src/main.js. 1.06 means the line is
                         106% of the page width, so the last glyph is
                         cut by the right edge. 1.0 = no crop.
-Photos               -> drop files in photos/ and update the <img>
+Photos               -> drop files in src/photos/ and update the <img>
                         src, width and height. Keep width/height
                         accurate or the page will jump as it loads.
 

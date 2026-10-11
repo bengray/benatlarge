@@ -1,3 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "22"
+
 [[redirects]]
   from = "/release"
   to = "https://form.jotform.com/262692507373059"
