@@ -1100,7 +1100,7 @@ a {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   background:
-    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 100' preserveAspectRatio='none'><filter id='g' x='-5%' y='-50%' width='110%' height='200%'><feTurbulence type='fractalNoise' baseFrequency='.08 .5' numOctaves='2' seed='3' result='n'/><feDisplacementMap in='SourceGraphic' in2='n' scale='5' xChannelSelector='R' yChannelSelector='G' result='d'/><feTurbulence type='fractalNoise' baseFrequency='.25 1.4' numOctaves='2' seed='8'/><feColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 6' result='h'/><feComposite in='d' in2='h' operator='in'/></filter><g filter='url(%23g)' fill='none' stroke='%23bf2f2c' stroke-linecap='round'><path d='M5 52 C110 47 250 50 395 41' stroke-width='12'/><path d='M18 55 C140 52 270 50 386 46' stroke-width='6' opacity='.85'/></g></svg>")
+    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 100' preserveAspectRatio='none'><filter id='g' x='-5%' y='-50%' width='110%' height='200%'><feTurbulence type='fractalNoise' baseFrequency='.18 .75' numOctaves='5' seed='8' result='n'/><feDisplacementMap in='SourceGraphic' in2='n' scale='5' xChannelSelector='R' yChannelSelector='G' result='d'/><feTurbulence type='fractalNoise' baseFrequency='.25 1.4' numOctaves='2' seed='8'/><feColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 8' result='h'/><feComposite in='d' in2='h' operator='in'/></filter><g filter='url(%23g)' fill='none' stroke='%23bf2f2c' stroke-linecap='round'><path d='M5 52 C110 47 250 50 395 41' stroke-width='6'/><path d='M18 55 C140 52 270 50 386 46' stroke-width='6' opacity='.85'/></g></svg>")
       0 0 / 100% 100% no-repeat border-box,
     linear-gradient(var(--paper), var(--paper)) text;
   -webkit-background-clip: border-box, text;
@@ -1108,7 +1108,7 @@ a {
 /* Nudge the middle line so the three strokes don't look stamped. */
 .statement__not span:nth-child(3) {
   background-position:
-    0 0.06em,
+    0 0.12em,
     0 0;
   background-size:
     100% 92%,
