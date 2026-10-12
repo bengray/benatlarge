@@ -5,7 +5,7 @@ date: 2026-10-11
 draft: false
 ---
 
-{% frame "/photos/blog/relationships.jpeg", "A hand-drawn illustration of life lines converging", "Artist Olivia de Recat created this minimalist illustration of how life lines converge in different kinds of relationships. Note the one labeled 'Dog'." %}
+{% frame "/photos/blog/relationships.jpg", "A hand-drawn illustration of life lines converging", "Artist Olivia de Recat created this minimalist illustration of how life lines converge in different kinds of relationships. Note the one labeled 'Dog'." %}
 
 > It is the right of every living dog to have a person that thinks they're the greatest animal on Earth. —Sue Sternberg
 
