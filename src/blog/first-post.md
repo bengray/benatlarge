@@ -1,5 +1,5 @@
 ---
-title: "First post test"
+title: "First post"
 description: "One line that shows under the title on the blog page and in link previews."
 date: 2026-10-11
 draft: true
