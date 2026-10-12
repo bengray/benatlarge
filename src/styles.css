@@ -211,6 +211,10 @@ a {
   padding: 0.85rem var(--gut);
   border-bottom: var(--rule-w) solid var(--rule);
 }
+.sub-nav {
+  border-top: none;
+  border-bottom: none;
+}
 .nav__list {
   list-style: none;
   display: flex;
@@ -1070,7 +1074,7 @@ a {
   .statement {
     grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
     column-gap: clamp(2rem, 5vw, 4.5rem);
-    align-items: end;
+    align-items: start;
   }
 }
 .statement__not {
@@ -1096,7 +1100,7 @@ a {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   background:
-    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 100' preserveAspectRatio='none'><filter id='g' x='-5%' y='-50%' width='110%' height='200%'><feTurbulence type='fractalNoise' baseFrequency='.08 .5' numOctaves='2' seed='3' result='n'/><feDisplacementMap in='SourceGraphic' in2='n' scale='5' xChannelSelector='R' yChannelSelector='G' result='d'/><feTurbulence type='fractalNoise' baseFrequency='.25 1.4' numOctaves='2' seed='8'/><feColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 4.1' result='h'/><feComposite in='d' in2='h' operator='in'/></filter><g filter='url(%23g)' fill='none' stroke='%23bf2f2c' stroke-linecap='round'><path d='M5 52 C110 47 250 50 395 41' stroke-width='12'/><path d='M18 55 C140 52 270 50 386 46' stroke-width='6' opacity='.85'/></g></svg>")
+    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 100' preserveAspectRatio='none'><filter id='g' x='-5%' y='-50%' width='110%' height='200%'><feTurbulence type='fractalNoise' baseFrequency='.08 .5' numOctaves='2' seed='3' result='n'/><feDisplacementMap in='SourceGraphic' in2='n' scale='5' xChannelSelector='R' yChannelSelector='G' result='d'/><feTurbulence type='fractalNoise' baseFrequency='.25 1.4' numOctaves='2' seed='8'/><feColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 6' result='h'/><feComposite in='d' in2='h' operator='in'/></filter><g filter='url(%23g)' fill='none' stroke='%23bf2f2c' stroke-linecap='round'><path d='M5 52 C110 47 250 50 395 41' stroke-width='12'/><path d='M18 55 C140 52 270 50 386 46' stroke-width='6' opacity='.85'/></g></svg>")
       0 0 / 100% 100% no-repeat border-box,
     linear-gradient(var(--paper), var(--paper)) text;
   -webkit-background-clip: border-box, text;
