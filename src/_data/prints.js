@@ -3,7 +3,7 @@
 // shape: "wide" or "tall" (tall prints take two rows on wide screens).
 export default [
   {
-    src: "/photos/chihuahua.jpg",
+    src: "/photos/chihuahua-documentary.jpg",
     width: 1028,
     height: 699,
     shape: "wide",
