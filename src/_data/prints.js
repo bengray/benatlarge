@@ -3,12 +3,12 @@
 // shape: "wide" or "tall" (tall prints take two rows on wide screens).
 export default [
   {
-    src: "/photos/bruiser.jpg",
+    src: "/photos/chihuahua.jpg",
     width: 1028,
     height: 699,
     shape: "wide",
     alt: "A chihuahua sitting upright and looking directly at the camera",
-    caption: "Bruiser. Warrenville",
+    caption: "Chihuahua. Warrenville",
   },
   {
     src: "/photos/blue-eyes-4.jpg",
