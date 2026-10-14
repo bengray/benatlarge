@@ -32,7 +32,7 @@ export default function (eleventyConfig) {
     collection: { name: "posts", limit: 20 },
     metadata: {
       language: "en",
-      title: "ben.atlarge · Blog",
+      title: "ben.atlarge · journal",
       subtitle: "Notes from behind the camera.",
       base: `${SITE_URL}/`,
       author: { name: "Ben Doyle Gray" },
@@ -41,7 +41,9 @@ export default function (eleventyConfig) {
 
   // ---- filters ----
   eleventyConfig.addFilter("year", () => new Date().getFullYear());
-  eleventyConfig.addFilter("isoDate", (d) => new Date(d).toISOString().slice(0, 10));
+  eleventyConfig.addFilter("isoDate", (d) =>
+    new Date(d).toISOString().slice(0, 10),
+  );
   // "3 March 2026", matching the dates elsewhere on the site
   eleventyConfig.addFilter("readableDate", (d) =>
     new Intl.DateTimeFormat("en-GB", {
@@ -51,14 +53,21 @@ export default function (eleventyConfig) {
       timeZone: "UTC",
     }).format(new Date(d)),
   );
-  eleventyConfig.addFilter("absoluteUrl", (path, base) => new URL(path, base).href);
+  eleventyConfig.addFilter(
+    "absoluteUrl",
+    (path, base) => new URL(path, base).href,
+  );
   eleventyConfig.addFilter("pad", (n) => String(n).padStart(2, "0"));
 
   // ---- shortcodes ----
-  // {% frame "/photos/blog/x.jpg", "alt text", "caption" %}
+  // {% frame "/photos/journal/x.jpg", "alt text", "caption" %}
   // A photograph in a paper border, same as the dispatch frames.
   eleventyConfig.addShortcode("frame", (src, alt = "", caption = "") => {
-    const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+    const esc = (s) =>
+      String(s)
+        .replace(/&/g, "&amp;")
+        .replace(/"/g, "&quot;")
+        .replace(/</g, "&lt;");
     const cap = caption
       ? `<figcaption class="frame__cap"><span>${esc(caption)}</span></figcaption>`
       : "";

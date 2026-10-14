@@ -5,7 +5,7 @@ date: 2026-10-11
 draft: false
 ---
 
-{% frame "/photos/blog/relationships.jpg", "A hand-drawn illustration of life lines converging", "Artist Olivia de Recat created this minimalist illustration of how life lines converge in different kinds of relationships. Note the one labeled 'Dog'." %}
+{% frame "/photos/journal/relationships.jpg", "A hand-drawn illustration of life lines converging", "Artist Olivia de Recat created this minimalist illustration of how life lines converge in different kinds of relationships. Note the one labeled 'Dog'." %}
 
 > It is the right of every living dog to have a person that thinks they're the greatest animal on Earth. —Sue Sternberg
 
@@ -21,4 +21,4 @@ Some of the answer is frustratingly vague, at least to me. There's unfortunately
 
 Instead we'll use this segment of our un-get-back-able time to bask in the wonderfulness of our pets. Whether your temporary life-traveling companion is a dog, a cat, or a mouse, your pet does more than keep you company. They mirror parts of us that we have a hard time seeing on our own. If we're observant and a bit introspective we, the keepers of the pets, can find health, healing, and maybe even a home of our own through them. As cheesy as that sounds we must accept the fact that while it's true we choose the pets we keep, our pets also play a role in choosing us.
 
-We don't need full understanding to have a full appreciation of a felt experience. And that's what this blog is about: the experience of pets and occasionally their humans. I'm Ben Doyle Gray. I photograph and write about the pets we, as a society, choose to keep.
+We don't need full understanding to have a full appreciation of a felt experience. And that's what this journal is about: the experience of pets and occasionally their humans. I'm Ben Doyle Gray. I photograph and write about the pets we, as a society, choose to keep.

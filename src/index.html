@@ -42,7 +42,7 @@ skipText: "Skip to the pictures"
       <a href="/the-shelter-year/">The shelter year</a>
     </li>
     <li class="nav__item--alt">
-      <a href="/blog">Blog &rarr;</a>
+      <a href="/journal">journal &rarr;</a>
     </li>
     <li class="nav__away">
       <a href="/work-with-me.html">Work with me &rarr;</a>
@@ -142,9 +142,9 @@ skipText: "Skip to the pictures"
     <li>
       {%- set latest = (collections.posts | last) if collections.posts else null
       %}
-      <a class="door" href="{{ latest.url if latest else '/blog/' }}">
+      <a class="door" href="{{ latest.url if latest else '/journal/' }}">
         <span class="door__k"
-          >{{ "Latest blog post" if latest else "Blog" }}</span
+          >{{ "Latest journal post" if latest else "journal" }}</span
         >
         <span class="door__t"
           >{{ latest.data.title if latest else "Notes" }}</span
@@ -154,7 +154,7 @@ skipText: "Skip to the pictures"
           else "What I am learning from behind the camera, written down." }}
         </span>
         <span class="door__go"
-          >{{ "Read it" if latest else "The blog" }} &rarr;</span
+          >{{ "Read it" if latest else "The journal" }} &rarr;</span
         >
       </a>
     </li>

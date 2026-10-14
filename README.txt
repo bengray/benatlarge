@@ -23,23 +23,23 @@ Deploy: push. Netlify runs `npm run build` and publishes _site/
 with `layout: layouts/base.njk` and a title/description in the
 front matter.
 
-BLOG
+journal
 ----
-Posts are Markdown files in src/blog/. The file name is the URL:
-src/blog/loki.md -> benatlarge.com/blog/loki/
+Posts are Markdown files in src/journal/. The file name is the URL:
+src/journal/loki.md -> benatlarge.com/journal/loki/
 
   ---
   title: "Loki, week one"
-  description: "One line for the blog list and link previews."
+  description: "One line for the journal list and link previews."
   date: 2026-10-14
   draft: true        # visible in `npm start`, left off the live site
   ---
 
-Photos for posts go in src/photos/blog/. For one in a paper border
-with a caption:  {% frame "/photos/blog/loki.jpg", "alt text", "Caption" %}
+Photos for posts go in src/photos/journal/. For one in a paper border
+with a caption:  {% frame "/photos/journal/loki.jpg", "alt text", "Caption" %}
 
-The blog list is /blog/, the feed is /feed.xml, and the sitemap
-picks posts up on its own. src/blog/first-post.md is an example draft;
+The journal list is /journal/, the feed is /feed.xml, and the sitemap
+picks posts up on its own. src/journal/first-post.md is an example draft;
 delete it whenever.
 
 THE IDEA

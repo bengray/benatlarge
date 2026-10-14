@@ -844,7 +844,7 @@ a {
 }
 
 /* ============================================================
-   blog
+   journal
    Same bench, same type. The index is a list of titles set like
    section heads; a post is a single column of Newsreader.
    ============================================================ */
@@ -854,7 +854,7 @@ a {
   margin-bottom: 0;
 }
 
-/* ---------- blog index ---------- */
+/* ---------- journal index ---------- */
 
 .posts {
   list-style: none;
