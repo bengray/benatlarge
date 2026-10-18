@@ -111,7 +111,7 @@ a {
   border-bottom: var(--rule-w) solid var(--rule);
   background-image: url("/photos/hero-background.jpg");
   background-size: 850px auto;
-  background-position: center center;
+  background-position: bottom center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 
