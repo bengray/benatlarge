@@ -47,7 +47,7 @@ export default [
     width: 640,
     height: 480,
     shape: "wide",
-    alt: "Two dogs sitting side by side, one leaning into the other",
+    alt: "Two pets sitting side by side, one leaning into the other",
     caption: "Lucy & Maggie",
   },
   {
@@ -55,7 +55,7 @@ export default [
     width: 1200,
     height: 796,
     shape: "wide",
-    alt: "A dog looking at something off-camera, with a slightly interested expression",
+    alt: "A pet looking at something off-camera, with a slightly interested expression",
     caption: "Certified Good Girl",
   },
   {
@@ -63,7 +63,7 @@ export default [
     width: 1200,
     height: 800,
     shape: "wide",
-    alt: "A dog looking up at the camera with a loving expression",
+    alt: "A pet looking up at the camera with a loving expression",
     caption: "Looking Up",
   },
   {
@@ -71,7 +71,7 @@ export default [
     width: 1200,
     height: 779,
     shape: "wide",
-    alt: "A dog looking off camera at something that has caught his attention",
+    alt: "A pet looking off camera at something that has caught his attention",
     caption: "Attention",
   },
 ];

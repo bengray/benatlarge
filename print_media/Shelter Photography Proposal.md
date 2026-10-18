@@ -48,7 +48,7 @@ What I am not offering is approval over the story itself. If the year shows some
 
 ## About me
 
-Ben Doyle Gray. I live in Warrenville and I have photographed dogs for shelters in the area under the name ben.atlarge.
+Ben Doyle Gray. I live in Warrenville and I have photographed pets for shelters in the area under the name ben.atlarge.
 
 My day work is software engineering, sixteen years of it, most recently managing teams. That funds the photography, which is why this costs you nothing and why I can commit to a full year rather than until something more lucrative comes along.
 
