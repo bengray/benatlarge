@@ -111,7 +111,9 @@ a {
   border-bottom: var(--rule-w) solid var(--rule);
   background-image: url("/photos/hero-background.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .stripe {
@@ -123,13 +125,13 @@ a {
   font-size: 0.625rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--bench-hi);
 }
 .stripe__mark {
-  color: var(--amber);
+  color: var(--china);
 }
 .stripe__sep {
-  color: var(--rule);
+  color: var(--bench);
 }
 
 /* The wordmark starts at the left gutter and runs off the right edge of
@@ -154,6 +156,7 @@ a {
   text-decoration: none;
   border-bottom: 1px solid transparent;
   padding-bottom: 0.1em;
+  color: var(--bench-hi);
 }
 .wordmark i {
   font-style: normal;
@@ -166,6 +169,15 @@ a {
   gap: clamp(1.5rem, 4vw, 3rem);
   grid-template-columns: minmax(0, 1fr);
   align-items: start;
+  p.standfirst {
+    color: var(--bench-hi);
+    background: rgba(232, 231, 226, 0.2);
+    backdrop-filter: blur(7px);
+    border: 1px solid var(--paper-dim);
+    border-left: 0px;
+    border-right: 0px;
+    padding: 0.7rem;
+  }
 }
 @media (min-width: 60rem) {
   .head__foot {
@@ -181,21 +193,24 @@ a {
 }
 
 .facts {
+  color: var(--bench-hi);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
   gap: 0;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--paper-dim);
 }
 .facts > div {
-  padding: 0.7rem 0.9rem 0.7rem 0;
-  border-bottom: 1px solid var(--rule);
+  padding: 0.7rem 0.9rem 0.7rem 0.7rem;
+  background: rgba(232, 231, 226, 0.2);
+  backdrop-filter: blur(7px);
+  border-bottom: 1px solid var(--paper-dim);
 }
 .facts dt {
   font-family: var(--mono);
   font-size: 0.5625rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--bench);
   margin-bottom: 0.2rem;
 }
 .facts dd {
