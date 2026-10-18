@@ -110,13 +110,15 @@ a {
   padding: clamp(1.25rem, 3vw, 2rem) 0 clamp(2rem, 5vw, 3.5rem);
   border-bottom: var(--rule-w) solid var(--rule);
   background-image: url("/photos/hero-background-mobile.jpg");
-  background-size: cover;
-  background-position: bottom center;
+  background-size: contain;
+  background-position: top center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 
   @media (min-width: 60rem) {
     background-image: url("/photos/hero-background.jpg");
+    background-size: cover;
+    background-position: bottom center;
   }
 }
 
