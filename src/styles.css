@@ -109,7 +109,7 @@ a {
 .head {
   padding: clamp(1.25rem, 3vw, 2rem) 0 clamp(2rem, 5vw, 3.5rem);
   border-bottom: var(--rule-w) solid var(--rule);
-  background-image: url("/photos/hero-background-mobile.jpg");
+  background-image: url("/photos/hero-background.jpg");
   background-size: contain;
   background-position: top center;
   background-attachment: fixed;
