@@ -177,9 +177,9 @@ a {
   align-items: start;
   p.standfirst {
     color: var(--bench-hi);
-    background: rgba(232, 231, 226, 0.2);
+    background: rgb(109, 111, 101, 0.2);
     backdrop-filter: blur(7px);
-    border: 1px solid var(--paper-dim);
+    border: 1px solid rgb(109, 111, 101);
     border-left: 0px;
     border-right: 0px;
     padding: 0.7rem;
@@ -203,13 +203,13 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
   gap: 0;
-  border-top: 1px solid var(--paper-dim);
+  border-top: 1px solid rgb(109, 111, 101);
 }
 .facts > div {
   padding: 0.7rem 0.9rem 0.7rem 0.7rem;
-  background: rgba(232, 231, 226, 0.2);
+  background: rgb(109, 111, 101, 0.2);
   backdrop-filter: blur(7px);
-  border-bottom: 1px solid var(--paper-dim);
+  border-bottom: 1px solid rgb(109, 111, 101);
 }
 .facts dt {
   font-family: var(--mono);
